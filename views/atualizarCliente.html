@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Cliente</title>
+    </head>
+    <body>
+            <input id="id" name="id" type="text" placeholder="Search..."/>
+            <input id="send" type="submit" value="Buscar" onclick="exibir()">
+            <div id="infocliente" style="display: none;">
+                <form id="formulario" method="POST" enctype="application/json">
+                    <label for="idCliente">ID do Cliente:</label>
+                    <input type="text" id="id" name="id">
+                    <br>
+                    <label for="nomeCliente">Nome do Cliente:</label>
+                    <input type="text" id="nome" name="nome">
+                    <br>
+                    <label for="telCliente">Telefone do Cliente:</label>
+                    <input type="text" id="telefone" name="telefone">
+                    <br>
+                    <label for="emailCliente">E-mail do Cliente:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <input id="send" type="submit" value="Enviar" onclick="url()">
+                </form>
+            </div>
+    </body>
+    <script>
+        function exibir() {
+            var x = document.getElementById("infocliente");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function url(){
+            let id = document.getElementById('id').value;
+            let url = document.getElementById('formulario').action = 'http://localhost:3000/clientes/'+id+'/update';
+            return url
+        }
+        //let id = document.getElementById('id').value;
+        //let url = document.getElementById('formulario').action = 'http://localhost:3000/clientes/'+id+'/update';
+    </script>
+</html>

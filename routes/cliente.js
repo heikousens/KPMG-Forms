@@ -9,8 +9,8 @@ router.post('/create', cliente_controller.cliente_create);
 
 router.get('/:id', cliente_controller.cliente_details);
 
-router.put('/:id/update',cliente_controller.cliente_update);
+router.post('/:id/update',cliente_controller.cliente_update);
 
-router.delete('/:id/delete', cliente_controller.cliente_delete);
+router.get('/:id/delete', cliente_controller.cliente_delete);
 
 module.exports = router;
