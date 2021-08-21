@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 
 const cliente = require('./routes/cliente');
 const fornecedor = require('./routes/fornecedor');
+const produto = require('./routes/produto');
+const venda = require('./routes/venda');
 const app = express();
 
 mongoose.set('useFindAndModify', false);
@@ -17,6 +19,8 @@ app.use(express.urlencoded({extended: false}))
 
 app.use('/clientes', cliente);
 app.use('/fornecedores', fornecedor);
+app.use('/produto', produto);
+app.use('/venda', venda);
 
 const port = 3000;
 
