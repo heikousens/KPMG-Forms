@@ -1,0 +1,2 @@
+/* Operador ternário */
+
