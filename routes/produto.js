@@ -11,6 +11,6 @@ router.get('/:id', produto_controller.produto_details);
 
 router.put('/:id/update', produto_controller.produto_update);
 
-router.delete('/:id/delete', produto_controller.produto_delete);
+router.get('/:id/delete', produto_controller.produto_delete);
 
 module.exports = router;

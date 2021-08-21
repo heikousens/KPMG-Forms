@@ -2,16 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Cliente</title>
+        <title>Venda</title>
         <link rel="stylesheet" href="../app.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     </head>
     <body>
-        <h1>Procurar Cliente</h1>
+        <h1>Apagar Venda</h1>
         <div class="form">
-            <input id="id" name="id" type="text" placeholder="Digite o ID do Cliente" class="form-control"/>
-            <input id="send" type="submit" value="Buscar" class="btn btn-primary" onclick="window.location = 'http://localhost:3000/clientes/' + document.getElementById('id').value">
+            <input id="id" name="id" type="text" placeholder="Digite o ID do produto" class="form-control"/>
+            <input id="send" type="submit" value="Apagar" class="btn btn-primary" onclick="window.location = 'http://localhost:3000/venda/' + document.getElementById('id').value + '/delete'">
         </div>
     </body>
 </html>

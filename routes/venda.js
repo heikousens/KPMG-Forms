@@ -11,6 +11,6 @@ router.get('/:id', venda_controller.venda_details);
 
 router.put('/:id/update', venda_controller.venda_update);
 
-router.delete('/:id/delete', venda_controller.venda_delete);
+router.get('/:id/delete', venda_controller.venda_delete);
 
 module.exports = router;

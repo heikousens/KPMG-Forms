@@ -3,25 +3,31 @@
     <head>
         <meta charset="utf-8" />
         <title>Cliente</title>
+        <link rel="stylesheet" href="../app.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     </head>
     <body>
-            <input id="id" name="id" type="text" placeholder="Search..."/>
-            <input id="send" type="submit" value="Buscar" onclick="exibir()">
+        <h1>Atualizar Cliente</h1>
+        <div class="form">
+            <input id="id" name="id" type="text" placeholder="Search..." class="form-control"/>
+            <input id="send" type="submit" value="Buscar" onclick="exibir()" class="btn btn-primary">
+        </div>
             <div id="infocliente" style="display: none;">
                 <form id="formulario" method="POST" enctype="application/json">
                     <label for="idCliente">ID do Cliente:</label>
-                    <input type="text" id="id" name="id">
+                    <input type="text" id="id" name="id" class="form-control">
                     <br>
                     <label for="nomeCliente">Nome do Cliente:</label>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" class="form-control">
                     <br>
                     <label for="telCliente">Telefone do Cliente:</label>
-                    <input type="text" id="telefone" name="telefone">
+                    <input type="text" id="telefone" name="telefone" class="form-control">
                     <br>
                     <label for="emailCliente">E-mail do Cliente:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" class="form-control">
                     <br>
-                    <input id="send" type="submit" value="Enviar" onclick="url()">
+                    <input id="send" type="submit" value="Enviar" onclick="url()" class="btn btn-primary">
                 </form>
             </div>
     </body>

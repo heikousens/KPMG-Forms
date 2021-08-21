@@ -11,6 +11,6 @@ router.get('/:id', fornecedor_controller.fornecedor_details);
 
 router.put('/:id/update', fornecedor_controller.fornecedor_update);
 
-router.delete('/:id/delete', fornecedor_controller.fornecedor_delete);
+router.get('/:id/delete', fornecedor_controller.fornecedor_delete);
 
 module.exports = router;
