@@ -14,7 +14,7 @@
             <input id="send" type="submit" value="Buscar" onclick="exibir()" class="btn btn-primary">
         </div>
             <div id="infocliente" style="display: none;">
-                <form id="formulario" method="POST" enctype="application/json">
+                <form id="formulario" action="" method="POST" enctype="application/json" onsubmit="return url();">
                     <label for="idCliente">ID do Cliente:</label>
                     <input type="text" id="id" name="id" class="form-control">
                     <br>
@@ -27,7 +27,7 @@
                     <label for="emailCliente">E-mail do Cliente:</label>
                     <input type="email" id="email" name="email" class="form-control">
                     <br>
-                    <input id="send" type="submit" value="Enviar" onclick="url()" class="btn btn-primary">
+                    <input id="send" type="submit" value="Enviar" class="btn btn-primary">
                 </form>
             </div>
     </body>
@@ -45,7 +45,5 @@
             let url = document.getElementById('formulario').action = 'http://localhost:3000/clientes/'+id+'/update';
             return url
         }
-        //let id = document.getElementById('id').value;
-        //let url = document.getElementById('formulario').action = 'http://localhost:3000/clientes/'+id+'/update';
     </script>
 </html>

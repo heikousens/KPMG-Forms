@@ -14,7 +14,7 @@
             <input id="send" type="submit" value="Buscar" onclick="exibir()" class="btn btn-primary">
         </div>
             <div id="infocliente" style="display: none;">
-                <form id="formulario" method="POST" enctype="application/json">
+                <form id="formulario" method="POST" enctype="application/json" onsubmit="return url();">
                     <div class="form-group">
                         <label for="fabricante">ID:</label>
                         <input type="text" id="id" name="id" class="form-control">
