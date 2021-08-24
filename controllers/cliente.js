@@ -25,7 +25,9 @@ exports.cliente_details = (req, res, next) => {
 }
 
 exports.cliente_update = (req, res, next) => {
-    Cliente.findByIdAndUpdate(req.params.id, {$set: req.body}, (err) => {
+    console.log(req.params)
+    console.log(req.body)
+    Cliente.findByIdAndUpdate(req.params.id, {$set: req.body}, (err, cliente) => {
         if (err) return 
             next(new Error(`Ocorreu um erro: ${err}`));
         res.send('Cliente alterado!')

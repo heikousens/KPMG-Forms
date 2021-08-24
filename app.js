@@ -5,6 +5,7 @@ const cliente = require('./routes/cliente');
 const fornecedor = require('./routes/fornecedor');
 const produto = require('./routes/produto');
 const venda = require('./routes/venda');
+
 const app = express();
 
 mongoose.set('useFindAndModify', false);

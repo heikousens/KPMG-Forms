@@ -25,7 +25,7 @@ exports.venda_details = (req, res, next) => {
 }
 
 exports.venda_update = (req, res, next) => {
-    Venda.findByIdAndUpdate(req.params.id, {$set: req.body}, (err) => {
+    Venda.findByIdAndUpdate(req.params.id, {$set: req.body}, (err,venda) => {
         if (err) return 
             next(new Error(`Ocorreu um erro: ${err}`));
         res.send('Venda alterado!')

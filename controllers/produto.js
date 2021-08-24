@@ -26,7 +26,7 @@ exports.produto_details = (req, res, next) => {
 }
 
 exports.produto_update = (req, res, next) => {
-    Produto.findByIdAndUpdate(req.params.id, {$set: req.body}, (err) => {
+    Produto.findByIdAndUpdate(req.params.id, {$set: req.body}, (err,produto) => {
         if (err) return 
             next(new Error(`Ocorreu um erro: ${err}`));
         res.send('Produto alterado!')

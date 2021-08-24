@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 h1 {
     text-align: center;
 }
@@ -18,3 +22,56 @@ input {
     margin: auto;
     width:250px;
 }
+
+.page-wrapper {
+    margin: 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+.container {
+    width: 100%;
+}
+
+
+.nn {
+    margin-bottom: 3%;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #e6e6e6;
+    color: #666666;
+    margin-top: 2%;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e6e6e6;
+    color: #666666;
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 5%;
+  }
+
+  .btn-edit{
+    margin-bottom: 10%;
+  }
